@@ -18,6 +18,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
     margin-top: 0;
     margin-bottom: 0;
@@ -279,6 +280,10 @@ img {
     background-color: var(--title-color);
 }
 
+.footer-box{
+    display: flex;
+}
+
 .logo-footer {
     color: var(--color-cloud);
 }
@@ -291,7 +296,39 @@ img {
     line-height: 1.5;
 }
 
+.footer-desc{
+    margin-right: 120px;
+}
 
+
+.social-list-title{
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    line-height: calc(24/16);
+    color: var(--white-color);
+}
+
+.social-list{
+    display: flex;
+    /* justify-content: center; */
+    gap: 16px;
+}
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color: #31D0AA;
+}
 
 /* ======================================PORTFOLIO STYLES=========================== */
 
