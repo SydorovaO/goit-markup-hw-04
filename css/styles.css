@@ -321,6 +321,11 @@ img {
     background-color: var(--accent-color);
     border-radius: 50%;
 }
+
+.team-social-list-link{
+fill: var(--color-cloud);
+}
+
 .team-social-list-link:hover,
 .team-social-list-link:focus
 {
@@ -351,6 +356,9 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.social-list-icon {
+    fill: var(--color-cloud);
+}
 
 .social-list-link:hover,
 .social-list-link:focus{
