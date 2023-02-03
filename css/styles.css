@@ -6,6 +6,7 @@
     --color-cloud: #F4F4FD;
     --color-cornflower: #E7E9FC;
     --hover-color: #404BBF;
+    --company-logo-color: #8E8F99;
 }
 
 body {
@@ -143,6 +144,27 @@ img {
 .portfolio-list-text {
     line-height: 1.5;
 }
+/* Social media links */
+.social-list,
+.team-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-social-list-link,
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.team-social-list-icon,
+.social-list-icon {
+    fill: var(--color-cloud);
+}
 
 /* ==============================HEADER=================================== */
 .header {
@@ -276,6 +298,49 @@ img {
     text-align: center;
 }
 
+.team-social-list {
+    gap: 24px;
+
+}
+
+.team-social-list-link {
+    background-color: var(--accent-color);
+}
+
+.team-social-list-link:hover,
+.team-social-list-link:focus {
+    background-color: var(--hover-color);
+}
+/* =======================================CUSTOMERS=========================== */
+
+.customers-list{
+    display: flex;
+    gap: 24px;
+}
+
+.customers-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--company-logo-color);
+    border-radius: 4px;
+}
+.customers-list-link:hover,
+.customers-list-link:focus{
+    border: 1px solid var(--hover-color);}
+
+
+.customers-list-icon{
+    fill: var(--company-logo-color);
+}
+
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon{
+    fill: var(--hover-color);
+}
+
 /* =======================================FOOTER=============================== */
 
 .footer{
@@ -304,35 +369,6 @@ img {
     margin-right: 120px;
 }
 
-
-/* SOCIAL LINKS TEAM */
-.team-social-list{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-
-}
-.team-social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}
-
-.team-social-list-link{
-fill: var(--color-cloud);
-}
-
-.team-social-list-link:hover,
-.team-social-list-link:focus
-{
-    background-color: var(--hover-color);
-}
-
-/* SOCIAL LINKS FOOTER */
 .social-list-title{
     margin-bottom: 16px;
 
@@ -342,22 +378,11 @@ fill: var(--color-cloud);
 }
 
 .social-list{
-    display: flex;
-    justify-content: center;
     gap: 16px;
 }
-.social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
-.social-list-icon {
-    fill: var(--color-cloud);
+.social-list-link{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list-link:hover,
