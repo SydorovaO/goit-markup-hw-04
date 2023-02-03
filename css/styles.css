@@ -61,7 +61,6 @@ img {
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
 }
 
 .menu-link.current {
@@ -151,13 +150,19 @@ img {
     justify-content: center;
 }
 
+.team-social-list-item,
+.social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
 .team-social-list-link,
 .social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -262,7 +267,14 @@ img {
 }
 
 /* ================================SECTION OUR FEATURES========================= */
-
+.thumb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    height: 112px;
+    background-color: var(--color-cloud);
+}
 .features-list-item {
     flex-basis: calc((100%-72px)/4);
 }
@@ -312,6 +324,9 @@ img {
     background-color: var(--hover-color);
 }
 /* =======================================CUSTOMERS=========================== */
+.section.customers{
+    padding-top: 130px;
+}
 
 .customers-list{
     display: flex;
@@ -351,6 +366,7 @@ img {
 
 .footer-box{
     display: flex;
+    align-items: baseline;
 }
 
 .logo-footer {
